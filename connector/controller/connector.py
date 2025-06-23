@@ -8,7 +8,7 @@ _logger = logging.getLogger(__name__)
 
 
 def send_telegram_message(chat_id, text):
-    token = "8142524885:AAFDPzTOU4sMfTfO1EONgSvkoHea_vFOaeg"
+    token = "<TOKEN_HERE>"
     url = f"https://api.telegram.org/bot{token}/sendMessage"
     payload = {"chat_id": chat_id, "text": text, "parse_mode": "Markdown"}
     try:
