@@ -1,47 +1,95 @@
-# Odoo Task Bot
+# Field Service Telegram
 
-## How can I edit this code?
+This is an open-source project that combines a Vite-powered React frontend with an Odoo backend to create a modern and efficient field service management application with Telegram integration.
 
-**Use your preferred IDE**
+## Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Frontend:**
+  - [Vite](https://vitejs.dev/)
+  - [React](https://reactjs.org/)
+  - [TypeScript](https://www.typescriptlang.org/)
+  - [Tailwind CSS](https://tailwindcss.com/)
+- **Backend:**
+  - [Odoo](https://www.odoo.com/)
+  - [Python](https://www.python.org/)
 
-Follow these steps:
+## Features
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Real-time task updates
+- Telegram bot integration for notifications and commands
+- User-friendly interface for managing field service tasks
+- Extensible and customizable Odoo backend
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Getting Started
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Prerequisites
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- [Node.js](https://nodejs.org/) (v18.x or higher)
+- [Bun](https://bun.sh/)
+- [Python](https://www.python.org/) (v3.10 or higher)
+- [Odoo](https://www.odoo.com/documentation/17.0/administration/install.html) (v17.0 or higher)
 
-**Edit a file directly in GitHub**
+### Frontend Setup
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/FieldService-Telegram.git
+   cd FieldService-Telegram
+   ```
+2. **Install dependencies:**
+   ```bash
+   bun install
+   ```
+3. **Run the development server:**
+   ```bash
+   bun dev
+   ```
+   The frontend will be available at `http://localhost:5173`.
 
-**Use GitHub Codespaces**
+### Backend Setup
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Navigate to the Odoo backend directory:**
+   ```bash
+   cd odoo-backend
+   ```
+2. **Install Python dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Configure Odoo:**
+   - Create an Odoo database.
+   - Add the `connector` module to your Odoo addons path.
+   - Install the `connector` module in your Odoo database.
+4. **Run the Odoo server:**
+   ```bash
+   odoo-bin -c /path/to/your/odoo.conf
+   ```
 
-## What technologies are used for this project?
+## Contributing
 
-This project is built with:
+We welcome contributions from the community! To contribute, please follow these steps:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. **Fork the repository.**
+2. **Create a new branch:**
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. **Make your changes and commit them:**
+   ```bash
+   git commit -m "feat: add your feature"
+   ```
+4. **Push to the branch:**
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. **Create a pull request.**
+
+Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+If you have any questions or suggestions, please open an issue or contact us at [your-email@example.com](mailto:your-email@example.com).
