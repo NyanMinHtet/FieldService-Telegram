@@ -8,7 +8,6 @@
     'license': 'LGPL-3',
     'category': 'service',
     'depends': [
-        'base'
     ],
     'auto_install': False,
     'application': False,
